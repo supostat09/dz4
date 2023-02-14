@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D13C551A2998E696009DFF17 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13C55192998E696009DFF17 /* main.swift */; };
+		D13C55212998E6CE009DFF17 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13C55202998E6CE009DFF17 /* Screen.swift */; };
+		D13C55232998E70B009DFF17 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13C55222998E70B009DFF17 /* Cell.swift */; };
+		D13C55252998E72D009DFF17 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13C55242998E72D009DFF17 /* Product.swift */; };
+		D13C55272998E96F009DFF17 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13C55262998E96F009DFF17 /* ShoppingCart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		D13C55162998E696009DFF17 /* dz4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dz4; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13C55192998E696009DFF17 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D13C55202998E6CE009DFF17 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		D13C55222998E70B009DFF17 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		D13C55242998E72D009DFF17 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		D13C55262998E96F009DFF17 /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				D13C55192998E696009DFF17 /* main.swift */,
+				D13C55222998E70B009DFF17 /* Cell.swift */,
+				D13C55202998E6CE009DFF17 /* Screen.swift */,
+				D13C55242998E72D009DFF17 /* Product.swift */,
+				D13C55262998E96F009DFF17 /* ShoppingCart.swift */,
 			);
 			path = dz4;
 			sourceTree = "<group>";
@@ -120,7 +132,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D13C55272998E96F009DFF17 /* ShoppingCart.swift in Sources */,
 				D13C551A2998E696009DFF17 /* main.swift in Sources */,
+				D13C55252998E72D009DFF17 /* Product.swift in Sources */,
+				D13C55212998E6CE009DFF17 /* Screen.swift in Sources */,
+				D13C55232998E70B009DFF17 /* Cell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
