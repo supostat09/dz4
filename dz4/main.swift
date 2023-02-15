@@ -7,26 +7,22 @@
 
 import Foundation
 
-let product1 = Product(name: "cola", price: 50.0)
-let product2 = Product(name: "milk", price: 40.0)
-let product3 = Product(name: "bred", price: 20.0)
+let products = [
+    Product(name: "cola", price: 50.0),
+    Product(name: "milk", price: 40.0),
+    Product(name: "bread", price: 20.0),
+    Product(name: "kefir", price: 35.0),
+    Product(name: "butter", price: 75.0),
+    Product(name: "eggs", price: 60.0)
+]
+let cell = Cell(product: products[0])
+let screen = Screen(cell: cell, products: products)
 
-let cell1 = Cell(product: product1)
-let cell2 = Cell(product: product2)
-let cell3 = Cell(product: product3)
+screen.display()
+cell.display()
 
-let screen1 = Screen(cell: cell1)
-let screen2 = Screen(cell: cell2)
-let screen3 = Screen(cell: cell3)
-
-screen1.delegate = ShoppingCart.shared
-screen2.delegate = ShoppingCart.shared
-screen3.delegate = ShoppingCart.shared
-
-
-screen1.selectProduct()
-screen2.selectProduct()
-screen3.selectProduct()
-
-
-print("Итого: \(ShoppingCart.shared.getTotal())")
+for i in 0..<products.count {
+    cell.product = products[i]
+    cell.display()
+    cell.select()
+}

@@ -7,14 +7,29 @@
 
 import Foundation
 
-class Screen {
+class Screen: ScreenDelegate {
     var cell: Cell
-    var delegate: ScreenDelegate?
-    
-    init(cell: Cell) {
-        self.cell = cell
-    }
-    func selectProduct() {
-        delegate?.didSelect(product: cell.product)
+    var selectedProducts: [Product] = []
+        
+    init(cell: Cell, products: [Product]) {
+            self.cell = cell
+            self.cell.delegate = self
+        }
+    func display() {
+        print("Доступные продукты:")
+        
+        for (index, product) in products.enumerated() {
+            print("\(index): \(product.name) - \(product.price)")
+            }
+        }
+    func didSelect(product: Product) {
+        selectedProducts.append(product)
+        print("Выбран \(selectedProducts.count) продукт:")
+        
+        for selectedProduct in selectedProducts {
+            print("- \(selectedProduct.name) - \(selectedProduct.price)")
+        }
+        let total = selectedProducts.reduce(0) { $0 + $1.price }
+        print("Итого: \(total)")
     }
 }

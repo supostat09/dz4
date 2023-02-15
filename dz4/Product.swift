@@ -7,10 +7,6 @@
 
 import Foundation
 
-protocol ScreenDelegate {
-    func didSelect(product: Product)
-}
-
 class Product {
     var name: String
     var price: Float
